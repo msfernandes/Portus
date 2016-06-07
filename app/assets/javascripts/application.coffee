@@ -4,5 +4,6 @@
 #= require turbolinks
 #= require bootstrap-sprockets
 #= require lifeitup_layout
+#= require footable.min
 #= require_tree .
 #= require bootstrap-typeahead-rails
