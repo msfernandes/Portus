@@ -9,7 +9,7 @@ span
       ' Special namespaces
   .panel-body
     .table-responsive
-      table.table.table-stripped.table-hover
+      table.footable.table
         col.col-40
         col.col-15
         col.col-15
@@ -18,10 +18,10 @@ span
         thead
           tr
             th Name
-            th Repositories
-            th Webhooks
-            th Created
-            th Public
+            th[data-breakpoints="xs"] Repositories
+            th[data-breakpoints="xs"] Webhooks
+            th[data-breakpoints="xs"] Created
+            th[data-type="html"] Public
         tbody
           - @special_namespaces.each do |namespace|
             = render partial: 'namespaces/namespace', locals: {namespace: namespace}
@@ -57,7 +57,7 @@ span
             | Create new namespace
   .panel-body
     .table-responsive
-      table.table.table-stripped.table-hover
+      table.footable.table
         col.col-40
         col.col-15
         col.col-15
@@ -66,10 +66,10 @@ span
         thead
           tr
             th Name
-            th Repositories
-            th Webhooks
-            th Created At
-            th Public
+            th[data-breakpoints="xs"] Repositories
+            th[data-breakpoints="xs"] Webhooks
+            th[data-breakpoints="xs"] Created at
+            th[data-type="html"] Public
         tbody#accessible-namespaces
           - @namespaces.each do |namespace|
             = render partial: 'namespaces/namespace', locals: {namespace: namespace}
